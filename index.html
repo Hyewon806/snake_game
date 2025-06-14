@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Snake Game</title>
+  <title>Snake Game Web</title>
   <style>
-    canvas { background: #000; margin:auto; display:block; }
-    body { text-align:center; color:#fff; background:#1a1a1a; font-family:sans-serif; }
-    #score { font-size:20px; margin-top:10px; }
+    body { display:flex; justify-content:center; align-items:center; height:100vh; background:#222; margin:0; }
+    #gameCanvas { background:#000; }
   </style>
 </head>
 <body>
-  <h1>Snake Game 🎮</h1>
-  <p>방향키로 뱀을 조종하세요. 웹에서 바로 플레이 가능합니다!</p>
-  <canvas id="gameCanvas" width="400" height="400"></canvas>
-  <div id="score">Score: 0</div>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
   <script src="snake.js"></script>
 </body>
 </html>
